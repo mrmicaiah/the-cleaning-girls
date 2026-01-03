@@ -392,6 +392,52 @@ img {
     margin-bottom: 20px;
 }
 
+/* ===== REVIEWS ===== */
+.reviews {
+    padding: 100px 0;
+    background: var(--gray-light);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.review-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.review-stars {
+    color: var(--yellow);
+    font-size: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-size: 18px;
+    font-style: italic;
+    color: var(--gray-dark);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.review-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.reviews-cta {
+    text-align: center;
+}
+
 /* ===== WHY US ===== */
 .why-us {
     padding: 100px 0;
@@ -436,7 +482,7 @@ img {
 /* ===== ABOUT ===== */
 .about {
     padding: 100px 0;
-    background: var(--gray-light);
+    background: var(--white);
 }
 
 .about-content {
@@ -490,7 +536,7 @@ img {
 /* ===== CONTACT ===== */
 .contact {
     padding: 100px 0;
-    background: var(--white);
+    background: var(--gray-light);
 }
 
 .contact-content {
@@ -662,6 +708,13 @@ img {
         margin-right: auto;
     }
 
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .why-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -749,6 +802,10 @@ img {
         gap: 30px;
     }
 
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
     .footer-contact {
         text-align: left;
     }
@@ -765,5 +822,13 @@ img {
 
     .btn {
         width: 100%;
+    }
+
+    .review-card {
+        padding: 30px 24px;
+    }
+
+    .review-text {
+        font-size: 16px;
     }
 }
